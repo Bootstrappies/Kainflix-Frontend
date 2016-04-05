@@ -13,4 +13,10 @@ public class IndexController {
     {
         return "index";
     }
+
+    @RequestMapping("/account")
+    String account()
+    {
+        return "account";
+    }
 }
