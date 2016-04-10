@@ -19,4 +19,16 @@ public class IndexController {
     {
         return "account";
     }
+
+    @RequestMapping("/login")
+    String login()
+    {
+        return "loginAndRegistry";
+    }
+
+    @RequestMapping("/basket")
+    String basket()
+    {
+        return "ShoppingBasket";
+    }
 }
