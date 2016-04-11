@@ -32,9 +32,15 @@ public class IndexController {
         return "ShoppingBasket";
     }
 
-    @RequestMapping("/admin")
-    String admin()
+    @RequestMapping("/adminC")
+    String adminC()
     {
-        return "admin";
+        return "adminCustomer";
+    }
+
+    @RequestMapping("/adminM")
+    String adminM()
+    {
+        return "adminMovies";
     }
 }
