@@ -54,6 +54,7 @@
     <br/>
     <br/>
 
+    <div class="row">
     <div class="panel panel-default col-md-8 col-xs-12 col-sm-12 col-lg-6">
         <!-- Table -->
         <table class="table">
@@ -63,9 +64,9 @@
             </thead>
             <tbody>
             <tr>
-                <td class="col-md-8 col-xs-8 col-sm-8 col-lg-8">Herbert Fritzl</td>
+                <td class="col-md-8 col-xs-8 col-sm-8 col-lg-8">The Ultimate Risk Taker</td>
                 <td class="col-md-4 col-xs-4 col-sm-4 col-lg-4">
-                    <button type="button" class="btn btn-error" data-toggle="modal" data-target=".bs-example-modal-sm">
+                    <button type="button" class="btn btn-error" data-toggle="modal" data-target=".bs-sure-modal-sm">
                         <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                     </button>
                 </td>
@@ -73,8 +74,44 @@
             </tbody>
         </table>
     </div>
+    </div>
 
-    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="row">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#addMovie">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Movie
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addMovie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Add Movie</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" name="title" class="form-control col-md-12" placeholder="Title"></input>
+                    <input type="text" name="title" class="form-control col-md-12" placeholder="Director"></input>
+                    <input type="text" name="title" class="form-control col-md-12" placeholder="Writer"></input>
+                    <input type="text" name="title" class="form-control col-md-12"
+                           placeholder="Actor 1, Actor 2, ..."></input>
+                    <textarea class="form-control" rows="5"></textarea>
+
+                    <div class="form-group">
+                        <label for="inputImg">Image</label>
+                        <input type="file" id="inputImg"></input>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bs-sure-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-body">
