@@ -27,7 +27,7 @@ html {
   margin-top: 6rem;
 }
 
-.container.main *, body {
+body {
   background-color: rgba(0,0,0,0) !important;
 }
 
@@ -44,11 +44,15 @@ html {
   border-left: none;
 }
 
-input:focus {
-  outline:none !important;
+input[type="text"]:focus {
+  border-color: #B9090B !important;
 }
 
-
+input
+{
+  background-color: #000000;
+  color: #aaa;
+}
 
 span.movieTitle
 {
@@ -61,10 +65,9 @@ table{
   border-spacing:5em;
 }
 
-input[type="submit"]
+button
 {
   background-color: #B9090B !important;
   color: #000000 !important;
   font-family: Bebas !important;
-  text-align: center !important;
 }
