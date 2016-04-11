@@ -38,29 +38,106 @@
                 <li><a href="/">Browse</a></li>
                 <li class="active"><a href="account">My Account</a></li>
             </ul>
+            <form action="#" method="POST">
+                <div class="input-group" style="float:right">
 
+                    <!--aus einem mir unbekannten Grund ladet er für die inputs kein css ausn file lg coki-->
+
+
+                <button type="button" class="form-control input-sm" style="margin-top:15px; background-color: #B9090B; color: #000000; font-family: Bebas; text-align: center; width:150px">
+                    <span style="color:black" class="glyphicon glyphicon-shopping-cart"></span> Warenkorb
+                </button>
+                    <input type="submit" class="form-control input-sm" value="Logout"
+                           style="margin-top:15px;  background-color: #B9090B; color: #000000; font-family: Bebas; text-align: center; width:75px"/>
+
+                </div>
+            </form>
         </div>
         <!--/.nav-collapse -->
     </div>
 </nav>
 <div class="container main">
 
-    <div class="starter-template">
-        <h1>THIS IS MY ACCOUNT!</h1>
 
-        <p class="lead">The frontend for the totally not Netflix-inspired streaming service.</p>
-    </div>
-    <h2>Movies</h2>
+    <div>
+        <h1>Accountdetails</h1>
 
-    <div class="owl-carousel">
-        <div> Your Content</div>
-        <div> Your Content</div>
-        <div> Your Content</div>
-        <div> Your Content</div>
-        <div> Your Content</div>
-        <div> Your Content</div>
-        <div> Your Content</div>
-    </div>
+        <div class="col-md-6">
+            <br/>
+
+            <form action="#" method="POST">
+                <table style="border-spacing: 2em;border-collapse:separate;">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" class="form-control input-sm" placeholder="Vorname"
+                                   style="background-color: #000000; color: #aaaaaa;"/>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control input-sm" placeholder="Nachname"
+                                   style="background-color: #000000; color: #aaaaaa; "/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" class="form-control input-sm" placeholder="Benutzername"
+                                   style="background-color: #000000; color: #aaaaaa; "/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" class="form-control input-sm" placeholder="Straße"
+                                   style="background-color: #000000; color: #aaaaaa; "/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="form-control input-sm" placeholder="PLZ"
+                                   style="background-color: #000000; color: #aaaaaa; "/>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control input-sm" placeholder="Ort"
+                                   style="background-color: #000000; color: #aaaaaa; "/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>Geburtstag: <input type="date" id="datepicker"/></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" class="form-control input-sm" placeholder="Passwort"
+                                   style="background-color: #000000; color: #aaaaaa; "/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" class="form-control input-sm" placeholder="Passwort wiederholen"
+                                   style="background-color: #000000; color: #aaaaaa; "/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" class="form-control input-sm" value="Daten aktualisieren"
+                                   style="background-color: #B9090B; color: #000000; font-family: Bebas; text-align: center;"/>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" onclick="var conf = confirm('Wollen Sie Ihr Konto wirklich löschen?')" class="form-control input-sm" value="Konto löschen"
+                                   style="background-color: #B9090B; color: #000000; font-family: Bebas; text-align: center;"/>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+
+        </div>
+        </div>
+
 </div>
 
 </body>
