@@ -36,7 +36,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/">Browse</a></li>
-                <li class="active"><a href="account">My Account</a></li>
+                <li><a href="account">My Account</a></li>
             </ul>
 
         </div>
@@ -45,10 +45,48 @@
 </nav>
 <div class="container main">
 
-    <ul class="nav nav-tabs ">
+    <ul class="nav nav-tabs col-md-8 col-xs-12 col-sm-12 col-lg-6">
         <li role="presentation" class="active"><a href="#">Customer</a></li>
-        <li role="presentation"><a href="#">Movie</a></li>
+        <li role="presentation"><a href="adminM">Movie</a></li>
     </ul>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="panel panel-default col-md-8 col-xs-12 col-sm-12 col-lg-6">
+        <!-- Table -->
+        <table class="table">
+            <thead>
+            <th>Customer</th>
+            <th>Delete</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="col-md-8 col-xs-8 col-sm-8 col-lg-8">Herbert Fritzl</td>
+                <td class="col-md-4 col-xs-4 col-sm-4 col-lg-4">
+                    <button type="button" class="btn btn-error" data-toggle="modal" data-target=".bs-example-modal-sm">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Are you sure ?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-error">Delete</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
 </div>
 
 </body>
