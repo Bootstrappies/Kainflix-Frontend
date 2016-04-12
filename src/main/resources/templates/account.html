@@ -41,12 +41,13 @@
             <form action="#" method="POST">
                 <div class="input-group" style="float:right">
 
-                    <!--aus einem mir unbekannten Grund ladet er für die inputs kein css ausn file lg coki dfdghghf-->
+                    <!--aus einem mir unbekannten Grund ladet er für die inputs kein css ausn file lg coki dfdghgghghghhf-->
 
 
-                <button type="button" class="form-control input-sm" style="margin-top:15px; background-color: #B9090B; color: #000000; font-family: Bebas; text-align: center; width:150px">
-                    <span style="color:black" class="glyphicon glyphicon-shopping-cart"></span> Warenkorb
-                </button>
+                    <button type="button" class="form-control input-sm"
+                            style="margin-top:15px; background-color: #B9090B; color: #000000; font-family: Bebas; text-align: center; width:150px">
+                        <span style="color:black" class="glyphicon glyphicon-shopping-cart"></span> Warenkorb
+                    </button>
                     <input type="submit" class="form-control input-sm" value="Logout"
                            style="margin-top:15px;  background-color: #B9090B; color: #000000; font-family: Bebas; text-align: center; width:75px"/>
 
@@ -126,19 +127,63 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="submit" onclick="var conf = confirm('Wollen Sie Ihr Konto wirklich löschen?')" class="form-control input-sm" value="Konto löschen"
-                                   style="background-color: #B9090B; color: #000000; font-family: Bebas; text-align: center;"/>
+                            <button type="button" class="form-control input-sm" data-toggle="modal"
+                                    data-target="#myModal"
+                                    style="background-color: #B9090B; color: #000000; font-family: Bebas; text-align: center;">
+                                Konto löschen
+                            </button>
 
                         </td>
+
+
                     </tr>
                     </tbody>
                 </table>
+
+
             </form>
 
         </div>
-        </div>
+    </div>
 
 </div>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog">
+        <div style="background-color: black; border: 0.1px solid lightgray;" class="modal-content">
+            <div class="modal-body">
+                <h5>Wollen Sie Ihr Konto wirklich löschen?</h5>
+            </div>
+            <div class="modal-footer">
+                <table>
+                    <tr>
+                        <td>
+                            <button type="button" class="form-control input-sm" data-toggle="modal"
+                                    data-target="#myModal"
+                                    style="margin-right:15px;  width: 80px;  background-color: #B9090B; color: #000000; font-family: Bebas; text-align: center;">
+                                Nein
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="form-control input-sm" data-toggle="modal"
+                                    data-target="#myModal"
+                                    style="width: 80px ; background-color: #ffffff; color: #000000; font-family: Bebas; text-align: center;">
+                                Ja
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
 
 </body>
 </html>
