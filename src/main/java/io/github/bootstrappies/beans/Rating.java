@@ -1,6 +1,5 @@
 package io.github.bootstrappies.beans;
 
-import javax.persistence.Entity;
 
 /**
  * Created by Corinna on 12.04.2016.
