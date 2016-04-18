@@ -36,20 +36,19 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/">Browse</a></li>
-                <li class="active"><a href="account">My Account</a></li>
+                <li class="active"><a href="account">Mein Account</a></li>
+                <li><a href="basket">Warenkorb</a></li>
+                <li><a href="login">Registrieren</a></li>
             </ul>
             <form action="#" method="POST">
-                <div class="input-group" style="float:right">
-
-                    <!--aus einem mir unbekannten Grund ladet er für die inputs kein css ausn file lg coki dfdghgghghghhf-->
-
-
-                    <button type="button" class="form-control input-sm"
-                            style="margin-top:15px; background-color: #B9090B; color: #000000; font-family: Bebas; text-align: center; width:150px">
-                        <span style="color:black" class="glyphicon glyphicon-shopping-cart"></span> Warenkorb
-                    </button>
-                    <input type="submit" class="form-control input-sm" value="Logout"
-                           style="margin-top:15px;  background-color: #B9090B; color: #000000; font-family: Bebas; text-align: center; width:75px"/>
+                <div class="input-group" style="float:right;">
+                    <input type="text" class="form-control input-sm" placeholder="Benutzername"
+                           style="background-color: #000000; color: #aaaaaa; margin-top:15px;"/>
+                    <span class="input-group-glue"></span>
+                    <input type="text" class="form-control input-sm" placeholder="Passwort"
+                           style="background-color: #000000; color: #aaaaaa; margin-top:15px;"/>
+                    <span class="input-group-glue"></span>
+                    <input type="submit" class="form-control input-sm" value="Login" style="color:#ffffff; background-color:#B9090B; font-family:Bebas;font-size: 12px;"/>
 
                 </div>
             </form>
