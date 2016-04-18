@@ -2,11 +2,11 @@
   font-family: Bebas;
   src: local("Bebas Neue Regular"),
        local("BebasNeue-Regular"),
-       url("../fonts/BebasNeue%20Regular.otf");
+       url("../fonts/bebas.otf");
 }
 
 .container > .navbar-header > .logo {
-  font-family: Bebas;
+  font-family: Bebas, sans-serif;
   color: #B9090B;
   text-decoration: none;
   font-weight: bold;
@@ -65,3 +65,9 @@ table{
   border-spacing:5em;
 }
 
+.owl-item div {
+  height: 10rem;
+  background-size: cover;
+  color: rgba(0,0,0,0);
+  margin: 1rem;
+}
