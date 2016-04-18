@@ -1,16 +1,14 @@
 package io.github.bootstrappies.beans;
 
-import javax.persistence.Entity;
 
 /**
  * Created by Corinna on 12.04.2016.
  */
 public class Rating {
     /*
-    •	A Rating from 1 to 5 is send.
+•	A Rating from 1 to 5 is send.
 •	A ratingId returned
 •	Average Rating of movie is updated
-
      */
     private int id;
     private double avgRating;
