@@ -6,10 +6,9 @@ package io.github.bootstrappies.beans;
  */
 public class Rating {
     /*
-    •	A Rating from 1 to 5 is send.
+•	A Rating from 1 to 5 is send.
 •	A ratingId returned
 •	Average Rating of movie is updated
-
      */
     private int id;
     private double avgRating;
