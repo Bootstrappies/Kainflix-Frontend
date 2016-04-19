@@ -34,7 +34,9 @@ body {
 *
 {
 	color:#aaa;
+  box-sizing: border-box;
 }
+
 .input-group-glue {
   width: 0;
   display: table-cell;
@@ -70,4 +72,38 @@ table{
   background-size: cover;
   color: rgba(0,0,0,0);
   margin: 1rem;
+  border: solid rgb(0,0,0) .5rem;
+  padding: .5rem;
+  transition: all .5s;
+}
+
+.owl-item {
+  position: relative;
+}
+
+.owl-item .focused {
+  border: solid white .5rem;
+  transition: all .5s;
+}
+
+.owl-item div:after {
+	top: calc(100% - 14px);
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: rgb(0,0,0);
+	border-width: 14px;
+  left: calc(50% - 14px);
+  transition: all .5s;
+}
+
+.owl-item div.focused:after {
+  border-top-color: #fff;
+}
+
+.details {
+  padding-right: 50%;
 }
